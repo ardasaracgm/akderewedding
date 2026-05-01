@@ -25,3 +25,4 @@
     "tailwindcss": "latest"
   }
 }
+"@tailwindcss/postcss": "latest"
