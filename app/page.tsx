@@ -237,7 +237,7 @@ export default function AkdereWeddingWebsite() {
                 <div className="mb-5 h-10 w-10 rounded-full bg-[#d8ad35]" />
                 <h3 className="mb-3 text-2xl font-semibold">{service}</h3>
                 <p className="leading-7 text-white/70">Planlama, alan kullanımı, süsleme ve servis detaylarıyla size özel bir deneyim hazırlanır.</p>
-              </button>
+                </div>
           ))}
           </div>
         </div>
