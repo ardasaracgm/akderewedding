@@ -326,7 +326,7 @@ export default function AkdereWeddingWebsite() {
               <img src={item.src} alt={item.title} className="aspect-[4/3] w-full object-cover object-center transition duration-500 group-hover:scale-105" />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5 text-white">
                 <p className="font-semibold">{item.title}</p>
-              </div>
+              </button>
             </div>
           ))}
         </div>
