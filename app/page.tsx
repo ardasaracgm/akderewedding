@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, MessageCircle, MapPin, Phone, Mail, Instagram, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Menu, X, MessageCircle, MapPin, Phone, Mail, Camera, ChevronLeft, ChevronRight } from "lucide-react";
 
 const PHONE = '+90 541 551 07 29'
 const WHATSAPP = '905415510729'
