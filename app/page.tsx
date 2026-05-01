@@ -9,7 +9,7 @@ const heroSlides = [
   {
     title: "Göl Kenarında Kır Düğünü",
     text: "Doğayla iç içe, göl kıyısında masalsı bir nikah ve düğün deneyimi.",
-    image: "/images/akdere-gol-kenari-nikah.jpg",
+    image: "/images/akdere-gol-kenari-nikah.png",
   },
   {
     title: "Rustik Masa Düzenleri",
@@ -57,9 +57,8 @@ const concepts = [
 ];
 
 const gallery = [
- type GalleryItem = (typeof gallery)[number];
   {
-    src: "/images/akdere-gol-kenari-nikah.jpg",
+    src: "/images/akdere-gol-kenari-nikah.png",
     title: "Göl Kenarı Nikah Alanı",
   },
   {
@@ -96,6 +95,8 @@ const gallery = [
   },
 ];
 
+type GalleryItem = (typeof gallery)[number];
+
 const menuTypes = [
   "Pasta & Meşrubat Menü",
   "Mini Kokteyl Menü",
@@ -118,11 +119,11 @@ const whatsappMessage = encodeURIComponent(
   "Merhaba, Akdere Wedding için bilgi almak istiyorum. Düğün/organizasyon tarihi ve kişi sayısı hakkında görüşebilir miyiz?"
 );
 const whatsappLink = `https://wa.me/905415510729?text=${whatsappMessage}`;
-const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
+
 export default function AkdereWeddingWebsite() {
   const [slide, setSlide] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 5000);
@@ -241,8 +242,8 @@ export default function AkdereWeddingWebsite() {
                 <div className="mb-5 h-10 w-10 rounded-full bg-[#d8ad35]" />
                 <h3 className="mb-3 text-2xl font-semibold">{service}</h3>
                 <p className="leading-7 text-white/70">Planlama, alan kullanımı, süsleme ve servis detaylarıyla size özel bir deneyim hazırlanır.</p>
-                </div>
-          ))}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -325,13 +326,13 @@ export default function AkdereWeddingWebsite() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#b88922]">Galeri</p>
         <h2 className="mb-12 text-4xl font-semibold md:text-5xl">Akdere Wedding’den kareler.</h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {gallery.map((item, i) => (
-            <button key={item.src} onClick={() => setSelectedImage(item)} className="group relative overflow-hidden rounded-[1.5rem] shadow-sm text-left"> 
+          {gallery.map((item) => (
+            <button key={item.src} onClick={() => setSelectedImage(item)} className="group relative overflow-hidden rounded-[1.5rem] shadow-sm text-left">
               <img src={item.src} alt={item.title} className="aspect-[4/3] w-full object-cover object-center transition duration-500 group-hover:scale-105" />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5 text-white">
                 <p className="font-semibold">{item.title}</p>
-            </div>
-              </button>
+              </div>
+            </button>
           ))}
         </div>
       </section>
