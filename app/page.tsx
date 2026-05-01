@@ -57,6 +57,7 @@ const concepts = [
 ];
 
 const gallery = [
+ type GalleryItem = (typeof gallery)[number];
   {
     src: "/images/akdere-gol-kenari-nikah.jpg",
     title: "Göl Kenarı Nikah Alanı",
