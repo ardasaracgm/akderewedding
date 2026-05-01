@@ -210,8 +210,8 @@ export default function AkdereWeddingWebsite() {
             </div>
           </motion.div>
         </div>
-        <button onClick={prevSlide} className="absolute bottom-10 right-24 z-20 rounded-full border border-white/40 bg-white/10 p-3 text-white backdrop-blur"><ChevronLeft /></button>
-        <button onClick={nextSlide} className="absolute bottom-10 right-10 z-20 rounded-full border border-white/40 bg-white/10 p-3 text-white backdrop-blur"><ChevronRight /></button>
+        <button onClick={prevSlide} className="absolute left-5 top-1/2 -translate-y-1/2 z-20 rounded-full border border-white/40 bg-white/10 p-3 text-white backdrop-blur"><ChevronLeft /></button>
+        <button onClick={nextSlide} className="absolute right-5 top-1/2 -translate-y-1/2 z-20 rounded-full border border-white/40 bg-white/10 p-3 text-white backdrop-blur"><ChevronRight /></button>
       </section>
 
       <section id="about" className="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-2 md:items-center md:py-24">
