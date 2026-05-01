@@ -7,16 +7,16 @@
   },
   "dependencies": {
     "framer-motion": "latest",
-    "lucide-react": "latest",
+    "lucide-react": "0.475.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-  "@tailwindcss/postcss": "latest",
-  "@types/node": "latest",
-  "@types/react": "latest",
-  "tailwindcss": "latest",
-  "typescript": "latest"
-}
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
+}
