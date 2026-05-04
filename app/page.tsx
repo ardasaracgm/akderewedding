@@ -344,7 +344,7 @@ export default function AkdereWeddingWebsite() {
             <h2 className="mb-6 text-4xl font-semibold md:text-5xl">Tarihiniz için bilgi alın.</h2>
             <p className="mb-8 text-white/70">Düğün, nikah, kına veya kurumsal etkinlik planınız için WhatsApp hattından hızlıca ulaşabilirsiniz.</p>
             <div className="space-y-4 text-white/85">
-              <p className="flex items-center gap-3"><Phone size={20}/> +90 541 551 07 29</p>
+              <p className="flex items-center gap-3"><Phone size={20}/> +90 532 130 66 63</p>
               <p className="flex items-center gap-3"><Mail size={20}/> info@akdereciftligi.com.tr</p>
               <p className="flex items-center gap-3"><MapPin size={20}/> Çiçekli Köy, 38, Bornova, İzmir 35040</p>
               <p className="flex items-center gap-3"><Instagram size={20}/> instagram.com/kirdugunum</p>
