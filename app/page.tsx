@@ -118,7 +118,7 @@ const planningSteps = [
 const whatsappMessage = encodeURIComponent(
   "Merhaba, Akdere Wedding için bilgi almak istiyorum. Düğün/organizasyon tarihi ve kişi sayısı hakkında görüşebilir miyiz?"
 );
-const whatsappLink = `https://wa.me/905415510729?text=${whatsappMessage}`;
+const whatsappLink = `https://wa.me/905321306663?text=${whatsappMessage}`;
 
 export default function AkdereWeddingWebsite() {
   const [slide, setSlide] = useState(0);
